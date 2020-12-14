@@ -1,0 +1,22 @@
+$theme-color:#00c854;
+
+$contents-color: #495057;
+
+$theme-gray: #808080;
+
+$mobile: "screen and (max-width: 768px)";
+
+@mixin ellipsis_one {
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin ellipse_multi($numOfLine: 2) {
+    display: -webkit-box;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $numOfLine;
+    word-wrap:break-word;
+}

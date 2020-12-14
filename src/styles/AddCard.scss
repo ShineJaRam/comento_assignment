@@ -1,0 +1,92 @@
+@import 'theme.scss';
+
+.addContainer{
+    padding: 20px 30px;
+    border: 1px solid $theme-gray;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+
+    .sponsored{
+        display: inline-block;
+        color: #adb5bd;
+        font-size: 13px;
+        margin-bottom: 17.5px;
+    }
+
+    .addContentsContainer{ 
+        display: flex;
+        width: 98%;
+
+        img{
+            width: 310px;
+            height: 179px;
+            margin-right: 29.5px;
+        }
+
+        .mainAdd{
+            .addTitle{
+                width: 435px;
+                margin: 15px 0px 20px 0px;
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: bold;
+                @include ellipse_multi;
+            }
+
+            .addContents{
+                width: 435px;
+                font-size: 16px;
+                line-height: 15px; 
+                line-height: 20px;
+                @include ellipse_multi(4)
+            ;}
+        }
+    }
+}
+
+@media #{$mobile} {
+    .addContainer{
+        padding: 20px 15.5px;
+        border: 1px solid $theme-gray;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+        margin-bottom: 10px;
+    
+        .sponsored{
+            display: inline-block;
+            color: #adb5bd;
+            font-size: 13px;
+            margin-bottom: 17.5px;
+        }
+    
+        .addContentsContainer{ 
+            display:flex;
+            width: 98%;
+            flex-direction: column;
+    
+            img{
+                width: 345px;
+                height: 179px;
+                margin-right: 29.5px;
+            }
+    
+            .mainAdd{
+                .addTitle{
+                    width: 345px;
+                    margin: 15px 0px 20px 0px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: bold;
+                    @include ellipse_multi;
+                }
+    
+                .addContents{
+                    width: 345px;
+                    font-size: 16px;
+                    line-height: 15px; 
+                    line-height: 20px;
+                    @include ellipse_multi(4)
+                ;}
+            }
+        }
+    }
+}

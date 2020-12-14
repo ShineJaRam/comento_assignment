@@ -1,0 +1,31 @@
+@import "theme.scss"; 
+
+.container{ 
+    display: flex;
+    padding:50px;
+    justify-content: center;
+}
+
+.loginButton{
+    width: 235px;
+    height: 60px;
+    border:none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #00c854;
+    border-radius: 5px;
+    margin-right: 40px; 
+}
+
+@media #{$mobile} {
+    .container{ 
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+    
+    .loginButton{
+        display: none; 
+    }
+}
